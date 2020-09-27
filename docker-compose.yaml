@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+    ovr_server:
+        build:
+            context: .
+            dockerfile: x64.dockerfile
+        image: ovrracing:latest
+        ports: 
+            - 8080:8080
+        
